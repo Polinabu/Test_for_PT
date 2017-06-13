@@ -1,0 +1,59 @@
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Test PT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Article for PT">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/bootstrap.css">
+  <link rel="stylesheet" href="style/font-awesome.css">
+  <link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css"> </head>
+
+<body>
+  <div class="container main_container">
+    <div class="col-md-8">
+      <div class="post_inner">
+        <h1 class="article_title">Эпидемия WannaCry. Обнаружить и обезвредить.</h1>
+        <hr class="line_hr">
+        <div class="article_box">
+          <p> Эпидемия WannaCry. Обнаружить и обезвредить. Последние дни по всему миру только и разговоров, что о массовой ransomware-атаке WannaCry. Среди пострадавших крупные международные компании, правительственные учреждения и, конечно, рядовые пользователи интернета. Атаки зарегистрированы в 150 странах мира, Россия также в числе пострадавших. В этой статье мы рассказываем, почему изначально данная атака была обречена на успех. <a href="https://www.ptsecurity.com/upload/corporate/ru-ru/analytics/WannaCry-analytics-rus.pdf" target="_blank">Читать статью</a></p>
+          <h3 class="headline">Шифровальщик WannaCry. Рекомендации</h3>
+          <p>В связи с начавшейся 12 мая 2017 года массовой эпидемией вируса-шифровальщика WannaCry <i>(WannaCry, WCry, WanaCrypt, WanaCrypt0r, Wana DeCrypt0r</i> и др.), компания Positive Technologies получает большое количество запросов на предоставление рекомендаций по обнаружению и противодействию этой угрозе. В связи с этим было решено сформировать базовый набор рекомендаций по противодействию этому виду вредоносного ПО. Данный документ не содержит полного и детального описания вируса-шифровальщика, так как мы ожидаем появления новых модификаций в течение этой недели с другими индикаторами компрометации.</p>
+          <p class="font_bold">Сегодня известно уже о как минимум 3 различных версиях WannaCry. Учитывая модульную структуру вируса, эксперты Positive Technologies ожидают появления в ближайшем будущем новых модификаций. Поэтому особенно важно максимально быстро устранить возможность распространения вируса в корпоративной сети.</p>
+          <p>Подготовленный нами базовый набор рекомендаций поможет противостоять атаке на всех ее этапах:</p>
+          <ul>
+            <li>Рекомендации по предотвращению заражения</li>
+            <li>Рекомендации по обнаружению заражения</li>
+            <li>Рекомендации по локализации и ликвидации заражения</li>
+          </ul>
+          <h3 class="headline">ПРИЛОЖЕНИЕ №1. Подготовка отчета по узлам с уязвимостью CVE-2017-0145</h3>
+          <h4 class="headline_small">EternalBlue</h4>
+          <p>Информация об уязвимости CVE-2017-0145 (Windows SMB Remote Code Execution Vulnerability) присутствует в базе знаний MaxPatrol 8 начиная со сборки 8.25.5.25279 (если используется более ранняя сборка, необходимо выполнить обновление). Обнаруживается уязвимость при сканировании узла в режиме Audit. В случае если у вас уже есть результаты сканирований на сборке 8.25.5.25279 (и системы не обновлялись после сканирования), для того чтобы получить список уязвимых узлов, достаточно подготовить отчет. Наиболее удобным будет отчет в табличном представлении, содержащий только узлы с данной уязвимостью. Его можно экспортировать в другую систему и провести установку обновления.</p>
+          <p>Чтобы создать отчет:</p>
+          <ol>
+            <li>Переходим на закладку <b>Отчеты</b></li>
+            <li>Добавляем новый отчет</li>
+            <li>Даем отчету имя и определяем тип – <b>SIEM integration</b></li>
+            <li>В разделе Задача выбираем созданную на Шаге 3 задачу</li>
+            <li>Включаем фильтрацию по полю <b>CVE = CVE-2017-0145. Это позволит отобрать только уязвимые узлы</b></li>
+            <li>Сохраняем отчет и запускаем</li>
+            <div class="container">
+              <div class="img_article"> <img src="upload/images/image1.jpg" width="440"> </div>
+            </div>
+            <li>Отчет сформирован в .XML-файле. Сохраняем его и открываем, например, в Microsoft Excel</li>
+            <li>Экспортируем список уязвимых узлов (столбцы NETBIOS либо value3)</li>
+            <div class="container">
+              <div class="img_article"> <img src="upload/images/image2.jpg" width="440"> </div>
+            </div>
+          </ol>
+          <p>Если внешних подсетей много (к примеру, распределенная по всей стране инфраструктура с множественными выходами в Интернет) и периметр сложно инвентаризировать – вы можете обратиться к представителям компании <a href="https://www.ptsecurity.com/ru-ru/" target="_blank">Positive Technologies </a>и<a href="abc@ptsecurity.сom"> за помощью в инвентаризации внешних служб, доступных из сети Интернет</a>.</p>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+
+</html>

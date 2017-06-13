@@ -1,0 +1,22 @@
+@media (max-width: 766px) {
+  .navbar-left-vertical a {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0eg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  font-family: 'Hind', sans-serif;
+  color: hsl(0, 0%, 47%);
+  padding: 0px;
+  }
+  
+  .navbar-left-vertical {
+    margin-top: 0px;
+  }
+  .navbar-left-vertical li {
+    margin-bottom: 0px;
+    
+    text-decoration-color: white !important;
+  }
+}
+
